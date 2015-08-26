@@ -1,0 +1,23 @@
+'use strict';
+
+module.exports = function(date) {
+
+	var type = Object.prototype.toString.call(date);
+	var now = new Date();
+
+	// convert dateStrings and timestamps to a Date
+	if (type === '[object String]' || type === '[object Number]') {
+		date = new Date(date);
+	}
+
+	var yearDiff = now.getFullYear() - date.getFullYear();
+	var monthDiff = now.getMonth() - date.getMonth();
+	var pastDate = now.getDate() < date.getDate();
+	
+	if (monthDiff < 0 || (monthDiff === 0 && pastDate)) {
+		yearDiff--;
+	}
+
+	return yearDiff;
+
+};

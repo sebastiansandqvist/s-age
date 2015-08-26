@@ -3,6 +3,8 @@
 
 [![NPM version](https://img.shields.io/npm/v/s-age.svg)](https://www.npmjs.com/package/s-age) ![Dependencies](https://img.shields.io/david/sebastiansandqvist/s-age.svg) [![build status](http://img.shields.io/travis/sebastiansandqvist/s-age.svg)](https://travis-ci.org/sebastiansandqvist/s-age) [![NPM license](https://img.shields.io/npm/l/s-age.svg)](https://www.npmjs.com/package/s-age)
 
+## Calculates years since a date
+
 ## License (ISC)
 Copyright (c) 2015, Sebastian Sandqvist <s.github@sparque.me>
 
