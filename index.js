@@ -14,6 +14,7 @@ module.exports = function(date) {
 	var monthDiff = now.getMonth() - date.getMonth();
 	var pastDate = now.getDate() < date.getDate();
 	
+	// compare months. if same month, compare days
 	if (monthDiff < 0 || (monthDiff === 0 && pastDate)) {
 		yearDiff--;
 	}
