@@ -20,9 +20,16 @@ describe('age calculator', function() {
 		expect(function() { age(undefined); }).to.throw();
 	});
 
-	it('should accept Dates')
-	
-	it('should accept dateStrings')
+	it('should accept Dates', function() {
+		var now = new Date();
+		var lastYear = new Date('' + (now.getFullYear() - 1))
+		expect(age(now)).to.equal(0);
+		expect(age(lastYear)).to.equal(1);
+	});
+
+	it('should accept dateStrings', function() {
+		expect(age('Aug 3 2012')).to.equal(3 + fix)
+	});
 
 	it('should accept timestamps', function() {
 		expect(age(1356728100000)).to.equal(2 + fix);
