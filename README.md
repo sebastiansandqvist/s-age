@@ -1,9 +1,17 @@
 # s-age
-## Work in progress
 
 [![NPM version](https://img.shields.io/npm/v/s-age.svg)](https://www.npmjs.com/package/s-age) ![Dependencies](https://img.shields.io/david/sebastiansandqvist/s-age.svg) [![build status](http://img.shields.io/travis/sebastiansandqvist/s-age.svg)](https://travis-ci.org/sebastiansandqvist/s-age) [![NPM license](https://img.shields.io/npm/l/s-age.svg)](https://www.npmjs.com/package/s-age)
 
-## Calculates years since a date
+## Usage
+`s-age` is a function that calculates years since a date. Input can be a date string, timestamp, or Date object.
+
+```javascript
+var age = require('s-age');
+
+age('2012') // returns 3 (in 2015)
+age(new Date()) // returns 0
+age(1356728100000) // returns 2 (in 2015)
+```
 
 ## License (ISC)
 Copyright (c) 2015, Sebastian Sandqvist <s.github@sparque.me>
