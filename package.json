@@ -1,6 +1,6 @@
 {
   "name": "s-age",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Calculate age given date of birth",
   "main": "index.js",
   "directories": {
