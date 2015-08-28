@@ -1,6 +1,6 @@
 {
   "name": "s-age",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Calculate age given date of birth",
   "main": "index.js",
   "directories": {
@@ -10,7 +10,8 @@
     "coverage": "mocha --require blanket --reporter mocha-lcov-reporter > etc/lcov.info",
     "cov": "npm run coverage &&  && mocha --require blanket -R html-cov > etc/coverage.html",
     "lint": "jscs index.js --config=./etc/.jscs.json && jshint --reporter=node_modules/jshint-stylish index.js --config ./etc/.jshint.json",
-    "test": "mocha"
+    "test": "mocha",
+    "posttest": "npm run lint"
   },
   "repository": {
     "type": "git",
