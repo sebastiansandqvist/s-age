@@ -1,5 +1,10 @@
 'use strict';
 
+// ----- Calculate age given date
+//		-- @see http://stackoverflow.com/a/7091965/4459340
+//		-- @param date {String|Number|Date}
+//		-- @return {Number} years since date
+// ---------------------------------------
 module.exports = function(date) {
 
 	var type = Object.prototype.toString.call(date);
