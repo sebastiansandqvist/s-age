@@ -1,11 +1,32 @@
 language: node_js
 node_js:
+  - "iojs-v3.3"
+  - "iojs-v3.0"
+  - "iojs-v2.5"
+  - "iojs-v2.0"
+  - "iojs-v1.8"
+  - "iojs-v1.0"
   - "0.12"
   - "0.11"
   - "0.10"
-  - "iojs"
-  - "iojs-v1.0.4"
-  - "iojs-v3.2.0"
+  - "0.9"
+  - "0.8"
+  - "0.6"
+  - "0.4"
+sudo: false
+matrix:
+  allow_failures:
+    - node_js: "iojs-v2.5"
+    - node_js: "iojs-v2.0"
+    - node_js: "iojs-v1.8"
+    - node_js: "iojs-v1.0"
+    - node_js: "0.12"
+    - node_js: "0.11"
+    - node_js: "0.10"
+    - node_js: "0.9"
+    - node_js: "0.8"
+    - node_js: "0.6"
+    - node_js: "0.4"
 addons:
   code_climate:
     repo_token: a08a366ae3dedbc8bb6fe8ba2b2c0cae4eef2b966091abbe23fdb66dd56b3b88
