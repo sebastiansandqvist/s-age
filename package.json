@@ -1,6 +1,6 @@
 {
   "name": "s-age",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Calculate years since a date (eg. a person's age given date of birth)",
   "main": "index.js",
   "scripts": {
